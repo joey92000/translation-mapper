@@ -1,131 +1,175 @@
+// BACK-END TRANSLATION
+// THERE IS SOME VALUE ARE COMING FROM BACKEND
+
+// how to get all possible value
+// just god know
 const BOOK_NAME = [
   {
-    value: "第一冊",
-    t_key: "VOLUME_1",
+    value: '首冊',
+    code: 'B00',
+    t_key: 'VOLUME_0',
   },
   {
-    value: "第二冊",
-    t_key: "VOLUME_2",
+    value: '第一冊',
+    code: 'B01',
+    t_key: 'VOLUME_1',
   },
   {
-    value: "第三冊",
-    t_key: "VOLUME_3",
+    value: '第二冊',
+    code: 'B02',
+    t_key: 'VOLUME_2',
   },
   {
-    value: "第四冊",
-    t_key: "VOLUME_4",
+    value: '第三冊',
+    code: 'B03',
+    t_key: 'VOLUME_3',
   },
   {
-    value: "第五冊",
-    t_key: "VOLUME_5",
+    value: '第四冊',
+    code: 'B04',
+    t_key: 'VOLUME_4',
   },
   {
-    value: "第六冊",
-    t_key: "VOLUME_6",
+    value: '第五冊',
+    code: 'B05',
+    t_key: 'VOLUME_5',
   },
   {
-    value: "第七冊",
-    t_key: "VOLUME_7",
+    value: '第六冊',
+    code: 'B06',
+    t_key: 'VOLUME_6',
   },
   {
-    value: "第八冊",
-    t_key: "VOLUME_8",
+    value: '第七冊',
+    code: 'B07',
+    t_key: 'VOLUME_7',
   },
   {
-    value: "第九冊",
-    t_key: "VOLUME_9",
+    value: '第八冊',
+    code: 'B08',
+    t_key: 'VOLUME_8',
   },
   {
-    value: "第十冊",
-    t_key: "VOLUME_10",
+    value: '第九冊',
+    code: 'B09',
+    t_key: 'VOLUME_9',
   },
   {
-    value: "第十一冊",
-    t_key: "VOLUME_11",
+    value: '第十冊',
+    code: 'B10',
+    t_key: 'VOLUME_10',
   },
   {
-    value: "第十二冊",
-    t_key: "VOLUME_12",
+    value: '第十一冊',
+    code: 'B11',
+    t_key: 'VOLUME_11',
   },
   {
-    value: "第十三冊",
-    t_key: "VOLUME_13",
+    value: '第十二冊',
+    code: 'B12',
+    t_key: 'VOLUME_12',
   },
   {
-    value: "第十四冊",
-    t_key: "VOLUME_14",
+    value: '第十三冊',
+    t_key: 'VOLUME_13',
   },
   {
-    value: "第十五冊",
-    t_key: "VOLUME_15",
+    value: '第十四冊',
+    t_key: 'VOLUME_14',
   },
   {
-    value: "第十六冊",
-    t_key: "VOLUME_16",
+    value: '第十五冊',
+    t_key: 'VOLUME_15',
   },
   {
-    value: "第十七冊",
-    t_key: "VOLUME_17",
+    code: 'B97',
+    value: '歷屆大考',
+    t_key: 'previousMajorExams',
   },
   {
-    value: "第十八冊",
-    t_key: "VOLUME_18",
+    code: 'B98',
+    value: '總複習',
+    t_key: 'generalReview',
   },
   {
-    value: "第十九冊",
-    t_key: "VOLUME_19",
+    code: 'B99',
+    value: '會考試題',
+    t_key: 'VOLUME_30',
+  },
+];
+
+const BOOK_NAME_H = [
+  {
+    value: '數學(一)',
+    code: 'B01',
+    t_key: 'HMA_VOLUME_1',
   },
   {
-    value: "第二十冊",
-    t_key: "VOLUME_20",
+    value: '數學(二)',
+    code: 'B02',
+    t_key: 'HMA_VOLUME_2',
   },
   {
-    value: "第二十一冊",
-    t_key: "VOLUME_21",
+    value: '數學(三)A版',
+    code: 'B03',
+    t_key: 'HMA_VOLUME_3',
   },
   {
-    value: "第二十二冊",
-    t_key: "VOLUME_22",
+    value: '數學(三)B版',
+    code: 'B04',
+    t_key: 'HMA_VOLUME_4',
   },
   {
-    value: "第二十三冊",
-    t_key: "VOLUME_23",
+    value: '數學(四)A版',
+    code: 'B05',
+    t_key: 'HMA_VOLUME_5',
   },
   {
-    value: "第二十四冊",
-    t_key: "VOLUME_24",
+    value: '數學(四)B版',
+    code: 'B06',
+    t_key: 'HMA_VOLUME_6',
   },
   {
-    value: "第二十五冊",
-    t_key: "VOLUME_25",
+    value: '選修數學甲(上)',
+    code: 'B07',
+    t_key: 'HMA_VOLUME_7',
   },
   {
-    value: "第二十六冊",
-    t_key: "VOLUME_26",
+    value: '選修數學乙(上)',
+    code: 'B08',
+    t_key: 'HMA_VOLUME_8',
   },
   {
-    value: "第二十七冊",
-    t_key: "VOLUME_27",
+    value: '選修數學甲(下)',
+    code: 'B09',
+    t_key: 'HMA_VOLUME_9',
   },
   {
-    value: "第二十八冊",
-    t_key: "VOLUME_28",
+    value: '選修數學乙(下)',
+    code: 'B10',
+    t_key: 'HMA_VOLUME_10',
   },
   {
-    value: "第二十九冊",
-    t_key: "VOLUME_29",
+    code: 'B97',
+    value: '歷屆大考',
+    t_key: 'previousMajorExams',
   },
   {
-    value: "第三十冊",
-    t_key: "VOLUME_30",
-  },
+    code: 'B98',
+    value: '總複習',
+    t_key: 'generalReview',
+  }
 ];
 
 // BOOK NAME = VOLUME
 export const bookNameMapper = (value) => {
-  const element = BOOK_NAME.find(e => e.value === value);
+  let element = BOOK_NAME.find((e) => e.value === value || e.code === value || e.value === '第二' + value);
   if (!element) {
-    window.console.warn("Can't find element for backend translation");
+    element = BOOK_NAME_H.find((e) => e.value === value || e.code === value || e.value === '第二' + value);
+  }
+  if (!element) {
+    window.console.warn('Can\'t find element for backend translation', { value });
+    return null;
   }
   return `commonTranslation.bookName.${element.t_key}`;
 };

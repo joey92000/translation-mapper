@@ -11,7 +11,7 @@ export const questionTypeMapper = (value) => {
     window.console.warn("Can't find element for backend translation", { value });
     return "";
   }
-  return `constants.questionType.${element.t_key}`;
+  return `commonTranslation.questionType.${element.t_key}`;
 };
 
 export const groupQuestionTypeMapper = (value) => {
@@ -20,7 +20,7 @@ export const groupQuestionTypeMapper = (value) => {
     window.console.warn("Can't find element for backend translation", { value });
     return "";
   }
-  return `constants.groupQuestionType.${element.t_key}`;
+  return `commonTranslation.groupQuestionType.${element.t_key}`;
 };
 
 const GROUP_QUESTION_TYPES = [
